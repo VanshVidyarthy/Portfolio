@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>My Portfolio</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="dark-mode-toggle">Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project" onclick="toggleDetails(0)">
+            <img src="Project1.webp" alt="Project 1">
+            <h3>Project 1</h3>
+            <p class="short-desc">Digital Panchayat Mobile Application</p>
+            <p class="details">This project is built using Android Studio and uses Java, SQLite</p>
+        </div>
+
+        <div class="project" onclick="toggleDetails(1)">
+            <img src="Project2.webp" alt="Project 2">
+            <h3>Project 2</h3>
+            <p class="short-desc">BigInt using C++.</p>
+            <p class="details">Implemented using C++ for big integer calculations.</p>
+        </div>
+
+        <div class="project" onclick="toggleDetails(2)">
+            <img src="Project3.webp" alt="Project 3">
+            <h3>Project 3</h3>
+            <p class="short-desc">Sign Language Detection.</p>
+            <p class="details">Developed using Python, OpenCV, mediapipe, tensorflow. Takes speech, text as inputs as well as real time image capturing for sign laguage detection.</p>
+        </div>
+    </section>
+</body>
+</html>
